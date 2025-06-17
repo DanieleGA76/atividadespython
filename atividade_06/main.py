@@ -28,7 +28,6 @@ while True:
             usuario[chave]= input("informe o valor da chave: ")
             os.system("cls")
             print("Chave cadastra com sucesso!")
-
             continue
             
         case "2":
