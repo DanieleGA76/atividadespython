@@ -51,13 +51,18 @@ while True:
             print(f"\n{'-'*40}\n")
             continue
         case "2":
+            print("\n Lista \n")
             for pessoa in pessoas:
+                print(f"{'-'*40}\n")
                 for chave in pessoa:
                     print(f"{chave}: {pessoa.get(chave)}.")
+            continue
         case "3":
             try:
-                chaves = input("Informe o chaves que deseja alterar: ")
-                if chaves >= 0 and chaves < len(pessoas):
+                i = input("Informe o chaves que deseja alterar: ")
+                
+                if i >= 0 and i < len(pessoas):
+                    chave = input("Informe a chave quer ser alterada: ")
                     pessoas[chaves] = input("Informe a pessoa: ")
                     print("Chave alterada com sucesso!")
                 else:
