@@ -11,16 +11,16 @@ import math as m
 # NOTE - o program deverá ser feito com funções
 """
 def quadrado():
-    q = m.l**2
+    q = l**2
     return q
 def retangulo():
-    r = m.b*m.h
+    r = b*h
     return r
 def triangulo():
-    t = (m.b*m.h)/2
+    t = (b*h)/2
     return t
 def trapezio():
-    tr = ((m.B + m.b)*m.h)/2
+    tr = ((B + b)*h)/2
     return tr
 
 while True:
@@ -39,20 +39,20 @@ while True:
                 print(f"área de um quadrado: {quadrado()}.")
                 continue
             case "2":
-                b = float(input("Informe o valor da base:"))
-                h = float(input("Informe o valor da altura: "))
-                print(f"A área de um retângulo: {retangulo}.")
+                b = float(input("Informe o valor da base:").replace(",", "."))
+                h = float(input("Informe o valor da altura: ").replace(",", "."))
+                print(f"A área de um retângulo: {retangulo()}.")
                 continue
             case "3":
-                b = float(input("Informe o valor da base menor: "))
-                h = float(input("Informe o valor da altura: "))
-                print(f"Informe a área de um triângulo.")
+                b = float(input("Informe o valor da base: ").replace(",", "."))
+                h = float(input("Informe o valor da altura: ").replace(",", "."))
+                print(f"Informe a área de um triângulo {triangulo()}.")
                 continue
             case "4":
-                B = float(input("Informe o valor da base Maior: "))
-                b = float(input("Informe o valor da base menor: "))
-                h = float(input("Informe o valor da altura: "))
-                print(f"Informe a área de um triângulo.")
+                B = float(input("Informe o valor da base Maior: ").replace(",", "."))
+                b = float(input("Informe o valor da base menor: ").replace(",", "."))
+                h = float(input("Informe o valor da altura: ").replace(",", "."))
+                print(f"Informe a área de um trapezio {trapezio()}.")
                 continue
             case "5":
                 print("Programa encerrado.")
